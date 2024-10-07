@@ -1,0 +1,392 @@
+/* General section styling */
+.our-video-section {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px 40px;
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  margin-top: 5%;
+  width: 80%;
+  margin-left: 164px;
+  z-index: 1; /* Ensure it is under the modal */
+  margin-bottom: 5%;
+}
+
+/* Modal Overlay */
+.video-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.75); /* Dark background for overlay */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999; /* Make sure it appears above everything else */
+}
+
+/* Modal Styling */
+.video-modal {
+  position: relative;
+  width: 80%;
+  height: 450px;
+  background-color: white;
+  margin: auto;
+  padding: 20px;
+  outline: none;
+  border-radius: 10px;
+  z-index: 1000; /* Ensure the modal is above the content */
+}
+
+.close-modal {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  background-color: transparent;
+  border: none;
+  font-size: 1.5rem;
+  color: #555;
+  cursor: pointer;
+}
+
+/* Left content (Text and Button) */
+.video-content {
+  flex: 1;
+  color: black;
+  z-index: 2;
+  text-align: left;
+  padding-right: 30px;
+}
+
+.video-label {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #777;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.video-content h2 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.video-content p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  max-width: 450px;
+}
+
+/* Button styling */
+.appointment-button {
+  background-color: #1b3d6b;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 50px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.appointment-button:hover {
+  background-color: #16325e;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Right side (YouTube Play Button) */
+.video-thumbnail-wrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.play-button-circle {
+  width: 100px;
+  height: 100px;
+  background-color: #FF0000; /* YouTube Red Color */
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.play-button-circle:hover {
+  background-color: #d90000; /* Darker red on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.youtube-icon {
+  color: white;
+  font-size: 3rem; /* Adjust size of the YouTube icon */
+}
+
+/* Responsive design */
+@media (max-width: 1024px) {
+  .our-video-section {
+    flex-direction: column;
+    text-align: center;
+    height: auto;
+  }
+
+  .video-content {
+    padding-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .play-button-circle {
+    width: 80px;
+    height: 80px;
+  }
+
+  .youtube-icon {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .video-content h2 {
+    font-size: 2rem;
+  }
+
+  .video-content p {
+    font-size: 1rem;
+  }
+
+  .play-button-circle {
+    width: 70px;
+    height: 70px;
+  }
+
+  .youtube-icon {
+    font-size: 2rem;
+  }
+}
+/* General section styling */
+.our-video-section {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px 40px;
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  margin-top: 5%;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 1; /* Ensure it is under the modal */
+}
+
+/* Modal Overlay */
+.video-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.75); /* Dark background for overlay */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999; /* Make sure it appears above everything else */
+}
+
+/* Modal Styling */
+.video-modal {
+  position: relative;
+  width: 80%;
+  height: 450px;
+  background-color: white;
+  margin: auto;
+  padding: 20px;
+  outline: none;
+  border-radius: 10px;
+  z-index: 1000; /* Ensure the modal is above the content */
+}
+
+.close-modal {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  background-color: transparent;
+  border: none;
+  font-size: 1.5rem;
+  color: #555;
+  cursor: pointer;
+}
+
+/* Left content (Text and Button) */
+.video-content {
+  flex: 1;
+  color: black;
+  z-index: 2;
+  text-align: left;
+  padding-right: 30px;
+}
+
+.video-label {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #777;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.video-content h2 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.video-content p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  max-width: 450px;
+}
+
+/* Button styling */
+.appointment-button {
+  background-color: #1b3d6b;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 50px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.appointment-button:hover {
+  background-color: #16325e;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Right side (YouTube Play Button) */
+.video-thumbnail-wrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.play-button-circle {
+  width: 100px;
+  height: 100px;
+  background-color: #FF0000; /* YouTube Red Color */
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.play-button-circle:hover {
+  background-color: #d90000; /* Darker red on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.youtube-icon {
+  color: white;
+  font-size: 3rem; /* Adjust size of the YouTube icon */
+}
+
+/* Responsive design */
+
+/* Tablet/iPad View */
+@media (max-width: 1024px) {
+  .our-video-section {
+    flex-direction: column;
+    text-align: center;
+    width: 90%; /* Reduce width for tablet view */
+    padding: 40px 20px;
+  }
+
+  .video-content {
+    padding-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .video-content h2 {
+    font-size: 2.25rem; /* Slightly smaller heading for tablets */
+  }
+
+  .video-content p {
+    font-size: 1.1rem; /* Adjust text size */
+  }
+
+  .play-button-circle {
+    width: 80px;
+    height: 80px;
+  }
+
+  .youtube-icon {
+    font-size: 2.5rem;
+  }
+}
+
+/* Mobile View */
+@media (max-width: 768px) {
+  .our-video-section {
+    flex-direction: column;
+    text-align: center;
+    width: 95%; /* Reduce width for mobile view */
+    padding: 30px 15px;
+  }
+
+  .video-content h2 {
+    font-size: 2rem; /* Smaller heading for mobile */
+  }
+
+  .video-content p {
+    font-size: 1rem; /* Adjust text size for mobile */
+  }
+
+  .play-button-circle {
+    width: 70px;
+    height: 70px;
+  }
+
+  .youtube-icon {
+    font-size: 2rem;
+  }
+}
+
+/* Small Mobile View */
+@media (max-width: 480px) {
+  .our-video-section {
+    width: 100%; /* Full width for small mobile devices */
+    padding: 20px 10px;
+  }
+
+  .video-content h2 {
+    font-size: 1.75rem; /* Even smaller heading for small screens */
+  }
+
+  .video-content p {
+    font-size: 0.9rem; /* Smaller text for small screens */
+  }
+
+  .play-button-circle {
+    width: 60px;
+    height: 60px;
+  }
+
+  .youtube-icon {
+    font-size: 1.75rem;
+  }
+}

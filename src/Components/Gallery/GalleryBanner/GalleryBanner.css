@@ -1,0 +1,107 @@
+/* General styles for the banner */
+.gallery-banner {
+    position: relative;
+    background-image: url('../GalleryBanner/Images/GalleryBanner.jpg'); /* Replace with your actual image path */
+    background-size: cover;
+    background-position: center;
+    height: 400px; /* Adjust height as needed */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5%;
+}
+
+/* Overlay for darkening the background image */
+.gallery-banner-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Dark overlay for contrast */
+}
+
+/* Banner text styling */
+.gallery-banner-content {
+    position: relative;
+    z-index: 2; /* Ensure content is above the overlay */
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Horizontally center content */
+    justify-content: center; /* Vertically center content */
+    width: 100%;
+    height: 100%; /* Take the full height of the banner */
+}
+
+.gallery-banner-content h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+/* Breadcrumb Styling */
+.gallery-breadcrumb {
+    margin-top: 10px;
+    font-size: 1.25rem;
+    color: #ffcc00; /* Set the breadcrumb text color to #ffcc00 */
+    text-align: center;
+    display: flex;
+    justify-content: center; /* Ensure the breadcrumb is centered */
+    align-items: center;
+    gap: 10px; /* Add space between breadcrumb items */
+}
+
+.gallery-breadcrumb span {
+    color: #ffcc00; /* Set the text color of the breadcrumb to #ffcc00 */
+}
+
+.gallery-separator {
+    color: #ffcc00; /* Separator color */
+}
+
+/* Responsive design */
+
+/* For tablets and iPads */
+@media (max-width: 1024px) {
+    .gallery-banner {
+        height: 300px;
+    }
+
+    .gallery-banner-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .gallery-breadcrumb {
+        font-size: 1rem;
+    }
+}
+
+/* For mobile devices */
+@media (max-width: 768px) {
+    .gallery-banner {
+        height: 250px;
+    }
+
+    .gallery-banner-content h1 {
+        font-size: 2rem;
+    }
+
+    .gallery-breadcrumb {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .gallery-banner {
+        height: 200px;
+    }
+
+    .gallery-banner-content h1 {
+        font-size: 1.5rem;
+    }
+
+    .gallery-breadcrumb {
+        font-size: 0.8rem;
+    }
+}

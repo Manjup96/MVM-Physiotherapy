@@ -1,0 +1,74 @@
+.about-banner {
+  position: relative;
+  height: 400px; /* Default height for larger screens */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.about-banner-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Dark overlay for better text contrast */
+}
+
+.about-banner-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+}
+
+.about-banner-content h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+/* about-breadcrumb Styling */
+.about-breadcrumb {
+  margin-top: 10px;
+  text-align: center; /* Center the about-breadcrumb */
+}
+
+.about-breadcrumb a {
+  color: #ffcc00; /* Set about-breadcrumb link color */
+  text-decoration: none; /* Remove underline */
+}
+
+.about-breadcrumb span {
+  color: #ffcc00; 
+  margin: 0 5px;
+}
+
+/* Media Queries for Responsiveness */
+
+/* Tablet view */
+@media (max-width: 1024px) {
+  .about-banner {
+      height: 300px; /* Smaller height for tablets */
+  }
+
+  .about-banner-content h1 {
+      font-size: 2rem; /* Reduce font size for tablets */
+  }
+}
+
+/* Mobile view */
+@media (max-width: 768px) {
+  .about-banner {
+      height: 250px; /* Even smaller height for mobile */
+  }
+
+  .about-banner-content h1 {
+      font-size: 1.5rem; /* Reduce font size further for mobile */
+  }
+
+  .about-breadcrumb a, .about-breadcrumb span {
+      font-size: 0.9rem; /* Adjust about-breadcrumb font size for mobile */
+  }
+}

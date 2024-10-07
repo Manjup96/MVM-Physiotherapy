@@ -1,0 +1,111 @@
+/* General styles for the banner */
+.service-banner {
+  position: relative;
+  background-image: url('../ServiceBanner/Images/servicebanner.jpg'); /* Replace with your actual image path */
+  background-size: cover;
+  background-position: center;
+  height: 400px; /* Adjust height as needed */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Overlay for darkening the background image */
+.banner-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Dark overlay for contrast */
+}
+
+/* Banner text styling */
+.banner-content {
+  position: relative;
+  z-index: 2; /* Ensure content is above the overlay */
+  text-align: center;
+  color: white;
+}
+
+.banner-content h1 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+/* Breadcrumb Styling */
+.service-breadcrumb {
+  margin-top: 10px;
+  font-size: 1.25rem;
+  color: #ffcc00; /* Updated to #ffcc00 */
+  text-align: center; /* Ensure breadcrumb is centered */
+  display: flex;
+  justify-content: center; /* Horizontally center the breadcrumb */
+  align-items: center; 
+
+}
+
+.service-breadcrumb span {
+  margin: 0 10px;
+  color: #ffcc00; /* Separator color */
+}
+
+@media (min-width: 1024px) {
+  /* Breadcrumb Styling */
+.service-breadcrumb {
+  margin-top: 10px;
+  font-size: 1.25rem;
+  color: #ffcc00; /* Updated to #ffcc00 */
+  text-align: center; /* Ensure breadcrumb is centered */
+  display: flex;
+  justify-content: center; /* Horizontally center the breadcrumb */
+  align-items: center; 
+  margin-left:36%;
+}
+}
+
+/* Responsive design */
+
+/* For tablets and iPads */
+@media (max-width: 1024px) {
+  .service-banner {
+    height: 300px;
+  }
+
+  .banner-content h1 {
+    font-size: 2.5rem;
+  }
+
+  .service-breadcrumb {
+    font-size: 1rem;
+  }
+}
+
+/* For mobile devices */
+@media (max-width: 768px) {
+  .service-banner {
+    height: 250px;
+  }
+
+  .banner-content h1 {
+    font-size: 2rem;
+  }
+
+  .service-breadcrumb {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .service-banner {
+    height: 200px;
+  }
+
+  .banner-content h1 {
+    font-size: 1.5rem;
+  }
+
+  .service-breadcrumb {
+    font-size: 0.8rem;
+  }
+}

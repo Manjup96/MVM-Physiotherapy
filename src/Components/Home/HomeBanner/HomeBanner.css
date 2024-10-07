@@ -1,0 +1,147 @@
+/* Make sure the body has no margin or padding */
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+  }
+  
+  /* Styling for the entire App to ensure the container takes full width */
+  .App {
+    width: 100vw; /* Full width of the viewport */
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* Prevent any overflow */
+  }
+  
+  /* Styling for the banner container */
+  .banner-container {
+    height: 500px;
+    width: 100vw; /* Ensure full width */
+    background-size: 110%; /* Set the image slightly larger initially */
+    background-position: center;
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    position: relative;
+    overflow: hidden; /* Prevent white space when zooming */
+    transition: background-size 3s ease-in-out; /* Smooth zoom effect */
+  }
+  
+  /* Add a light transparent overlay using the ::before pseudo-element */
+  .banner-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4); /* Adjust transparency here (0.4 is 40% opacity) */
+    z-index: 1; /* Ensure the overlay is behind the content but above the background */
+  }
+  
+  /* Hover effect to trigger zoom-in for the background */
+  .banner-container:hover {
+    background-size: 115%; /* Slightly zoom-in the background on hover */
+  }
+  
+  /* Styling for the banner content */
+  .banner-content {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+    text-align: left;
+    max-width: 80%;
+    z-index: 4; /* Ensure the content is above the transparent overlay */
+  }
+  
+  /* Larger font size for desktop view */
+  .banner-content h1 {
+    font-size: 48px;
+    font-weight: bold;
+  }
+  
+  /* Subtitle styling */
+  .banner-content p {
+    font-size: 20px;
+    max-width: 400px;
+    margin-bottom: 20px;
+  }
+  
+  /* Button styling - reduce width */
+  .banner-content button {
+    margin-top: 20px;
+    font-size: 18px;
+    padding: 10px 20px;
+    width: 175px; /* Set fixed width for the button */
+    font-size: 16px;
+    padding: 10px 15px;
+  }
+  
+  /* Media queries for responsiveness */
+  
+  /* Tablet view (medium-sized screens) */
+  @media (max-width: 1024px) {
+    .banner-content h1 {
+      font-size: 36px;
+    }
+  
+    .banner-content p {
+      font-size: 18px;
+    }
+  
+    .banner-container {
+      height: 400px;
+    }
+  }
+  
+  /* Mobile view (small screens) */
+  @media (max-width: 768px) {
+    .banner-content {
+      left: 10px;
+      max-width: 90%;
+    }
+  
+    .banner-content h1 {
+      font-size: 28px;
+    }
+  
+    .banner-content p {
+      font-size: 16px;
+    }
+  
+    .banner-content button {
+      font-size: 16px;
+      padding: 8px 16px;
+      width: 180px; /* Reduce button width for mobile */
+    }
+  
+    .banner-container {
+      height: 300px;
+    }
+  }
+  
+  /* Extra small mobile view */
+  @media (max-width: 480px) {
+    .banner-content h1 {
+      font-size: 24px;
+    }
+  
+    .banner-content p {
+      font-size: 14px;
+    }
+  
+    .banner-content button {
+      font-size: 14px;
+      padding: 6px 12px;
+      width: 155px; /* Further reduce button width for smaller screens */
+    }
+  
+    .banner-container {
+      height: 250px;
+    }
+  }
+  

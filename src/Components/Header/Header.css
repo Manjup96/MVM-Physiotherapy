@@ -1,0 +1,182 @@
+header {
+  width: 100%;
+}
+
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: #243b6b; /* Updated background color */
+  font-size: 14px;
+  color: #fff; /* Text color */
+}
+
+.contact-info {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.contact-info span {
+  margin-right: 15px;
+  color: #f9a825; /* Updated email/phone icon and text color */
+}
+
+.social-icons a {
+  margin-left: 10px;
+  color: #f9a825; /* Updated social media icon color */
+}
+
+.social-icons a:hover {
+  color: #ffb74d; /* Hover effect for social icons */
+}
+
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+  position: relative;
+  z-index: 1;
+}
+
+.logo {
+  flex: 1;
+}
+
+.logo img {
+  width: 100px;
+  height: auto;
+}
+
+.hamburger-icon {
+  display: none;
+  cursor: pointer;
+  order: 3; /* Move toggle to the right end */
+}
+
+.nav-menu {
+  flex: 2;
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-menu ul {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+  padding: 0;
+}
+
+.nav-menu a {
+  text-decoration: none;
+  color: #243b6b; /* Updated text color for links */
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.nav-menu a:hover {
+  color: #007BFF;
+}
+
+.book-appointment-desktop {
+  flex: 1;
+  display: inline-block;
+  text-align: right;
+}
+
+.book-appointment-desktop button {
+  background-color: #4caf50; /* Updated button background color */
+  color: #fff; /* Text color */
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.book-appointment-desktop button:hover {
+  background-color: #388e3c; /* Hover effect for button */
+}
+
+.book-appointment-mobile {
+  display: none;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .top-bar {
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .contact-info,
+  .social-icons {
+    width: 100%;
+    justify-content: space-between;
+    padding: 5px 0;
+  }
+
+  .social-icons {
+    display: none; /* Hide social media icons in mobile view */
+  }
+
+  .nav-bar {
+    flex-direction: row;
+  }
+
+  .logo {
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .hamburger-icon {
+    display: block;
+  }
+
+  .nav-menu ul {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background-color: #fff;
+    width: 100%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+  }
+
+  .nav-menu.open ul {
+    display: flex;
+    justify-content: center;
+  }
+
+  .book-appointment-desktop {
+    display: none;
+  }
+
+  .book-appointment-mobile {
+    display: block;
+  }
+}
+
+/* For very small mobile views */
+@media (max-width: 480px) {
+  .contact-info span {
+    display: block;
+    margin-bottom: 5px;
+  }
+
+  .social-icons {
+    display: none; /* Ensure social icons are hidden on very small screens as well */
+  }
+
+  .hamburger-icon {
+    position: relative;
+  }
+}

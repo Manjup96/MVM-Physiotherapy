@@ -1,0 +1,110 @@
+/* Container for the entire section */
+.trusted-section {
+    background-color: #e9eff6; /* Light background */
+    padding: 40px 40px; /* Padding to add space around the section */
+    text-align: center; /* Center the content */
+    margin-bottom: 5%;
+}
+
+/* Styling for the heading text */
+.trusted-section h2 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #222; /* Darker color for the heading */
+    margin-bottom: 20px; /* Spacing between heading and logos */
+}
+
+/* Scrolling container for logos */
+.scrolling-container {
+    overflow: hidden; /* Hide the overflowing logos */
+    white-space: nowrap; /* Prevent wrapping of the logos */
+    position: relative;
+}
+
+/* Container for the logos */
+.trusted-logos {
+    display: inline-flex;
+    justify-content: center; /* Center the logos */
+    align-items: center;
+    animation: scroll-right 15s linear infinite; /* Smooth right to left scrolling */
+}
+
+/* Styling for each logo */
+.trusted-logos img {
+    max-width: 120px; /* Limit the size of each logo */
+    margin: 0 50px; /* Gives 100px space between each logo (50px on each side) */
+    opacity: 0.8; /* Slightly transparent logos */
+    transition: opacity 0.3s ease, transform 0.3s ease; /* Smooth transition on hover, added transform */
+}
+
+.trusted-logos img:hover {
+    opacity: 1; /* Full opacity on hover */
+    transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+/* Keyframes for the scrolling effect in reverse direction */
+@keyframes scroll-right {
+    0% {
+        transform: translateX(-100%); /* Start from the left */
+    }
+    100% {
+        transform: translateX(0); /* End at the right */
+    }
+}
+
+/* Responsive styles */
+
+/* For large desktop screens (1440px and above) */
+@media (min-width: 1440px) {
+    .trusted-logos img {
+        max-width: 130px; /* Slightly larger logos for large screens */
+    }
+
+    .trusted-section h2 {
+        font-size: 2rem; /* Larger font size for desktop */
+    }
+}
+
+/* For tablets and iPads (768px to 1024px) */
+@media (max-width: 1024px) {
+    .trusted-logos {
+        justify-content: center; /* Center logos */
+    }
+
+    .trusted-logos img {
+        max-width: 110px; /* Smaller logos for tablets */
+        margin: 0 40px; /* Adjust gap for smaller screens */
+    }
+
+    .trusted-section h2 {
+        font-size: 1.6rem; /* Reduce font size for smaller screens */
+    }
+}
+
+/* For mobile devices (up to 768px) */
+@media (max-width: 768px) {
+    .trusted-logos {
+        justify-content: center; /* Center logos for mobile */
+    }
+
+    .trusted-logos img {
+        max-width: 100px; /* Smaller logos for mobile */
+        margin: 0 30px; /* Adjust gap for mobile screens */
+    }
+
+    .trusted-section h2 {
+        font-size: 1.5rem; /* Reduce heading font size */
+    }
+}
+
+/* For small mobile devices (up to 480px) */
+@media (max-width: 480px) {
+    .trusted-logos img {
+        max-width: 90px; /* Make logos even smaller for small screens */
+        margin: 0 20px; /* Adjust gap for small screens */
+    }
+
+    .trusted-section h2 {
+        font-size: 1.3rem; /* Further reduce font size */
+    }
+}

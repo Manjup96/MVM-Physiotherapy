@@ -1,0 +1,80 @@
+/* Container to hold all cards */
+.vision-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 20px;
+    gap: 20px;
+    max-width: 1200px;
+    margin: auto;
+    margin-bottom: 5%;
+  }
+  
+  /* Vision section */
+  .vision-section {
+    height: auto;
+  }
+  
+  /* Individual card */
+  .vision-card {
+    background: #fff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    flex: 1 1 calc(33.333% - 40px); /* Three cards per row with spacing */
+    max-width: calc(33.333% - 40px); /* Three cards per row */
+    min-width: 250px;
+    transition: box-shadow 0.3s ease-in-out;
+    border-top: 4px solid #59a869;
+    margin-top: 42px;
+  }
+  
+  /* Icon wrapper for the image or icon */
+  .icon-wrapper {
+    margin-bottom: 15px;
+    color: #59a869; /* Change color of the icons */
+  }
+  
+  /* Heading style */
+  .vision-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #2c3e50;
+  }
+  
+  /* Paragraph style */
+  .vision-card p {
+    font-size: 15px;
+    line-height: 1.6;
+    color: #7f8c8d;
+    text-align: justify;
+  }
+  
+  /* On hover effect for cards */
+  .vision-card:hover {
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Media Queries for responsive design */
+  
+  /* Tablet view */
+  @media (max-width: 1024px) {
+    .vision-card {
+      flex: 1 1 calc(45% - 20px); /* Two cards per row */
+      max-width: calc(45% - 20px);
+    }
+  }
+  
+  /* Mobile view */
+  @media (max-width: 768px) {
+    .vision-card {
+      flex: 1 1 100%; /* Full width for mobile */
+      max-width: 100%;
+    }
+  
+    .vision-container {
+      gap: 10px; /* Smaller gap for mobile */
+    }
+  }
+  

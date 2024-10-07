@@ -1,0 +1,212 @@
+.contact-location {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 50px;
+  background-color: #f9f9f9;
+}
+
+.contact-info {
+  flex: 1;
+  max-width: 50%;
+  padding-right: 30px;
+}
+
+.contact-info h2 {
+  color: #1a73e8;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.contact-info h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.contact-info p {
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-bottom: 30px;
+}
+
+/* Container for Workshop and Phone in one row */
+.workshop-phone {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%; /* Full width container for both items */
+}
+
+.workshop-phone .info-item {
+  width: 48%; /* Each item takes 48% width so they sit side by side */
+}
+
+/* Container for Email and Open Hours in one row */
+.email-hours {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%; /* Full width container */
+}
+
+.email-hours .info-item {
+  width: 48%; /* Each item takes 48% width for side-by-side alignment */
+}
+
+.info-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.info-item i {
+  font-size: 2rem;
+  color: #4caf50; /* Icon color */
+  margin-right: 15px;
+}
+
+.info-item h4 {
+  margin-bottom: 5px;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.social-icons {
+  margin-left: 40px;
+}
+
+/* Increase the size of each social media icon and add more space between them */
+.social-icons i {
+  font-size: 2rem;
+  color: #333;
+  margin-right: 30px; /* Add more space between the icons */
+  cursor: pointer;
+}
+
+/* Change the color of each social media icon */
+.social-icons .fab.fa-facebook-f {
+  color: #3b5998; /* Facebook color */
+}
+
+.social-icons .fab.fa-twitter {
+  color: #1da1f2; /* Twitter color */
+}
+
+.social-icons .fab.fa-instagram {
+  color: #e1306c; /* Instagram color */
+}
+
+.social-icons .fab.fa-youtube {
+  color: #ff0000; /* YouTube color */
+}
+
+.social-icons .fab.fa-linkedin-in {
+  color: #0077b5; /* LinkedIn color */
+}
+
+/* Change color on hover */
+.social-icons i:hover {
+  color: #ffcc00; /* Hover color for all icons */
+}
+
+.map-container {
+  flex: 1;
+  max-width: 45%;
+  height: auto;
+}
+
+.map-container iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+/* Responsive styling */
+
+/* Mobile phones (portrait and landscape) */
+@media (max-width: 768px) {
+  .contact-location {
+    flex-direction: column;
+  }
+
+  .contact-info, 
+  .map-container {
+    max-width: 100%;
+    padding: 0;
+  }
+
+  .map-container {
+    margin-top: 30px;
+  }
+
+  .contact-info h1 {
+    font-size: 2rem;
+  }
+
+  .contact-info h2 {
+    font-size: 1.5rem;
+  }
+
+  .social-icons i {
+    font-size: 1.5rem;
+  }
+
+  /* Stack items vertically for small screens */
+  .workshop-phone .info-item, 
+  .email-hours .info-item {
+    width: 100%; /* Full width on mobile screens */
+  }
+}
+
+/* Tablets and smaller desktops */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .contact-location {
+    flex-wrap: wrap;
+  }
+
+  .contact-info, 
+  .map-container {
+    max-width: 100%;
+    padding-right: 0;
+  }
+
+  .contact-info {
+    padding-bottom: 30px;
+  }
+
+  .contact-info h1 {
+    font-size: 2.2rem;
+  }
+
+  .social-icons i {
+    font-size: 1.8rem;
+  }
+
+  /* Two columns on tablets */
+  .workshop-phone .info-item, 
+  .email-hours .info-item {
+    width: 48%; /* Two columns on tablet */
+  }
+}
+
+/* Larger desktops */
+@media (min-width: 1025px) {
+  .contact-info {
+    max-width: 50%;
+  }
+
+  .map-container {
+    max-width: 45%;
+  }
+
+  .contact-details {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px; /* Adds space between items */
+  }
+
+  .info-item {
+    width: 48%; /* Two items per row on large screens */
+    margin-bottom: 30px;
+  }
+}

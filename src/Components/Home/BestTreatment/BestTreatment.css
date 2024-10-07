@@ -1,0 +1,173 @@
+.physiotherapy-banner {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px; /* Default height for desktop */
+    overflow: hidden; /* Ensure background stays within bounds */
+    background: rgba(0, 0, 0, 0.9); /* Background transparency */
+    padding: 0 20px; /* Add padding for smaller screens */
+    text-align: center; /* Ensure text is centered */
+}
+
+.banner-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.4; /* Apply 40% transparency to the background */
+    z-index: 1; /* Ensure the background stays behind content */
+}
+
+.banner-content {
+    z-index: 2; /* Ensure content is above the background */
+    max-width: 100%; /* Allow content to scale to screen size */
+    position: relative;
+    text-align: center; /* Center text horizontally */
+    padding: 0 20px; /* Add padding for responsiveness */
+    box-sizing: border-box; /* Include padding in element’s total width */
+}
+
+.banner-content h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    line-height: 1.3;
+    font-weight: bold;
+    color: white; /* Ensure text is visible on the background */
+}
+
+.banner-content p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    line-height: 1.6;
+    color: white; /* Ensure text is visible on the background */
+}
+
+.BestTreatment-button {
+    padding: 12px 24px;
+    background-color: #28a745; /* Green background */
+    border: none;
+    border-radius: 4px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #218838; /* Darker green on hover */
+}
+
+/* Responsive for medium screens (iPad) */
+@media (max-width: 1024px) {
+    .physiotherapy-banner {
+        height: 350px; /* Adjust height for iPad */
+    }
+
+    .banner-content h1 {
+        font-size: 32px; /* Adjust heading font size for iPad */
+    }
+
+    .banner-content p {
+        font-size: 16px; /* Adjust paragraph font size for iPad */
+    }
+
+    .BestTreatment-button{
+        font-size: 14px;
+        padding: 6px 12px;
+        width: 155px;
+        margin-left:65px;
+        color:white;
+        background-color: #59a869;
+        border:none;
+    }
+}
+
+/* Responsive for small screens (mobile devices) */
+@media (max-width: 768px) {
+    .physiotherapy-banner {
+        height: 300px; /* Adjust height for smaller devices */
+    }
+
+    .banner-content {
+        padding: 0 15px; /* Add more padding for smaller screens */
+    }
+
+    .banner-content h1 {
+        font-size: 24px;
+        margin-top: 10px;
+    }
+
+    .banner-content p {
+        font-size: 16px;
+    }
+
+    .BestTreatment-button{
+        font-size: 14px;
+        padding: 6px 12px;
+        width: 155px;
+        margin-left:65px;
+        color:white;
+        background-color: #59a869;
+        border:none;
+    }
+}
+
+/* Responsive for extra small screens (phones) */
+@media (max-width: 480px) {
+    .physiotherapy-banner {
+        height: 250px; /* Further reduce height for extra small screens */
+    }
+
+    .banner-content {
+        padding: 0 10px; /* Further increase padding for small devices */
+    }
+
+    .banner-content h1 {
+        font-size: 16px; /* Smaller heading for mobile */
+    }
+
+    .banner-content p {
+        font-size: 12px;
+    }
+
+    .BestTreatment-button{
+        font-size: 14px;
+        padding: 6px 12px;
+        width: 155px;
+        margin-left:65px;
+        color:white;
+        background-color: #59a869;
+        border:none;
+    }
+}
+
+/* Large screens (Desktops and bigger) */
+@media (min-width: 1200px) {
+    .physiotherapy-banner {
+        height: 500px; /* Increase height for large screens */
+    }
+
+    .banner-content h1 {
+        font-size: 42px; /* Larger heading */
+    }
+
+    .banner-content p {
+        font-size: 21px;
+        width: 75%;
+    }
+
+    .BestTreatment-button{
+       
+        font-size: 18px;
+        padding: 10px 20px;
+        width: 175px;
+        font-size: 16px;
+        padding: 10px 15px;
+        margin-bottom: 20px;
+    }
+    
+}

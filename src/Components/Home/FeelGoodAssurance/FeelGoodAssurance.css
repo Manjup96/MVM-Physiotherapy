@@ -1,0 +1,140 @@
+.feel-good-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #2a4365;
+  padding: 20px;
+  border-radius: 8px;
+  flex-wrap: wrap;
+  /* margin-top: 20%; */
+  max-width: 1253px;
+  min-height: 300px;
+  margin: 4% auto;
+}
+
+.feel-good-content {
+  max-width: 60%;
+  color: white;
+}
+
+.feel-good-content h1 {
+  font-size: 28px;
+  line-height: 1.3;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.feel-good-content p {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.feel-good-image {
+  flex-shrink: 0;
+  max-width: 35%;
+}
+
+/* .feel-good-image img {
+  width: 50%;
+  height: auto;
+  border-radius: 8px;
+} */
+
+/* Responsive for larger screens (desktop) */
+@media (min-width: 1200px) {
+  .feel-good-container {
+    padding: 50px 100px;
+  }
+
+  .feel-good-content {
+    max-width: 60%;
+  }
+
+  .feel-good-image {
+    max-width: 30%;
+  }
+  .feel-good-image img {
+    width: 50%;
+    height: auto;
+    border-radius: 8px;
+    margin-left: 136px;
+  }
+}
+
+/* Responsive for iPad/tablet */
+@media (max-width: 1024px) {
+  .feel-good-container {
+    padding: 30px;
+  }
+
+  .feel-good-content {
+    max-width: 100%;
+    margin-bottom: 20px; /* Add some space for content on smaller screens */
+  }
+
+  .feel-good-image {
+    max-width: 50%; /* Reduce image size for tablets */
+  }
+
+  .feel-good-image img {
+    width: 50%;
+    height: auto;
+    border-radius: 8px;
+    margin-left: 136px;
+  }
+
+  .feel-good-content h1 {
+    font-size: 30px;
+  }
+
+  .feel-good-content p {
+    font-size: 14px;
+  }
+}
+
+/* Responsive for mobile */
+@media (max-width: 768px) {
+  .feel-good-container {
+    flex-direction: column; /* Stack content vertically */
+    padding: 20px;
+  }
+
+  .feel-good-content {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .feel-good-image {
+    max-width: 80%; /* Reduce image size even more for mobile */
+    margin-top: 20px;
+  }
+
+  .feel-good-image img {
+    width: 50%;
+    height: auto;
+    border-radius: 8px;
+    margin-left: 73px;
+  }
+  .feel-good-content h1 {
+    font-size: 24px;
+  }
+
+  .feel-good-content p {
+    font-size: 14px;
+  }
+}
+
+/* Extra small mobile view */
+@media (max-width: 480px) {
+  .feel-good-content h1 {
+    font-size: 20px;
+  }
+
+  .feel-good-content p {
+    font-size: 12px;
+  }
+
+  .feel-good-image {
+    max-width: 100%; /* Image takes full width on smaller devices */
+  }
+}

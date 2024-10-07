@@ -1,0 +1,137 @@
+/* General banner styles */
+.ServiceHealing-banner {
+    position: relative;
+    background-image: url('./Images/ServiceHealingBanner.jpg'); /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+    height: 500px; /* Adjust the height as needed */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+/* Overlay for opacity effect */
+.ServiceHealing-banner::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); /* Black overlay with 60% opacity */
+    z-index: 1; /* Ensure the overlay is on top of the background image but behind the text */
+}
+
+.ServiceHealing-banner-content {
+    position: relative;
+    text-align: center;
+    max-width: 800px;
+    z-index: 2; /* Ensure text is above the overlay */
+}
+
+.ServiceHealing-banner-content h1 {
+    font-size: 2.8rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.ServiceHealing-banner-content p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.ServiceHealing-cta-button {
+    background-color: #28a745; /* Green button color */
+    color: white;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.ServiceHealing-cta-button:hover {
+    background-color: #218838;
+}
+
+/* Responsive styles */
+
+/* For large desktops (1440px and above) */
+@media (min-width: 1440px) {
+    .ServiceHealing-banner {
+        height: 600px;
+    }
+
+    .ServiceHealing-banner-content h1 {
+        font-size: 3rem;
+    }
+
+    .ServiceHealing-banner-content p {
+        font-size: 1.3rem;
+    }
+}
+
+/* For tablets and iPads (768px to 1024px) */
+@media (max-width: 1024px) {
+    .ServiceHealing-banner {
+        height: 400px;
+    }
+
+    .ServiceHealing-banner-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .ServiceHealing-banner-content p {
+        font-size: 1.1rem;
+    }
+
+    .ServiceHealing-cta-button {
+        font-size: 0.9rem;
+        padding: 10px 25px;
+    }
+}
+
+/* For mobile devices (up to 768px) */
+@media (max-width: 768px) {
+    .ServiceHealing-banner {
+        height: 350px;
+    }
+
+    .ServiceHealing-banner-content h1 {
+        font-size: 2rem;
+    }
+
+    .ServiceHealing-banner-content p {
+        font-size: 1rem;
+    }
+
+    .ServiceHealing-cta-button {
+        font-size: 0.8rem;
+        padding: 8px 20px;
+    }
+}
+
+/* For small mobile devices (up to 480px) */
+@media (max-width: 480px) {
+    .ServiceHealing-banner {
+        height: 300px;
+    }
+
+    .ServiceHealing-banner-content h1 {
+        font-size: 1.75rem;
+    }
+
+    .ServiceHealing-banner-content p {
+        font-size: 0.9rem;
+    }
+
+    .ServiceHealing-cta-button {
+        font-size: 0.8rem;
+        padding: 8px 20px;
+    }
+}

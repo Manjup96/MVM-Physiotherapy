@@ -1,0 +1,94 @@
+.contact-banner {
+  position: relative;
+  background-image: url('../ContactBanner/Images/contact-banner.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5%;
+}
+
+/* Dark overlay */
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Content styling */
+.overlay-content {
+  position: relative;
+  z-index: 1;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 3rem;
+  margin: 0;
+}
+
+.breadcrumb {
+  margin-top: 10px;
+  font-size: 1.2rem;
+}
+
+.breadcrumb span {
+  color: #ffcc00;
+}
+
+.breadcrumb span + span {
+  margin-left: 10px;
+}
+
+/* Responsive adjustments */
+/* Mobile phones */
+@media (max-width: 767px) {
+  .contact-banner {
+    height: 250px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  .breadcrumb {
+    font-size: 1rem;
+  }
+}
+
+/* Tablets */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .contact-banner {
+    height: 300px;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  .breadcrumb {
+    font-size: 1.1rem;
+  }
+}
+
+/* Larger screens (desktops) */
+@media (min-width: 1025px) {
+  .contact-banner {
+    height: 400px;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  .breadcrumb {
+    font-size: 1.2rem;
+  }
+}

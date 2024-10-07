@@ -1,0 +1,152 @@
+.contactform-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch; /* Ensures both cards stretch equally */
+  gap: 10px; /* Add gap between the cards for consistency */
+  min-height: 100vh;
+  padding: 50px;
+  background-color: #fff;
+}
+
+.contactform-card, .contactform-card2 {
+  background-size: cover;
+  background-position: center;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  width: 48%;
+  color: white;
+  position: relative;
+}
+
+.contactform-card {
+  background-image: url('./Images/contact-banner.jpg'); /* Replace with your image path */
+}
+
+.contactform-card2 {
+  background-image: url('./Images/Introduction1.jpg'); /* Replace with your image path */
+  height: 700px; /* Set the desired height for the right-side card */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Overlay styles */
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Black overlay with 50% opacity */
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+  opacity: 0; /* Start with invisible overlay */
+  transition: opacity 0.3s ease; /* Transition effect */
+}
+
+/* Show overlay on hover */
+.contactform-card:hover .overlay,
+.contactform-card2:hover .overlay {
+  opacity: 1; /* Fade in overlay on hover */
+}
+
+.contactform-card h2, .contactform-card2 h2,
+.contactform-card p, .contactform-card2 p,
+.contactform-card label {
+  color: white; /* Ensures text is visible over the background */
+}
+
+/* Form styles */
+.contactform {
+  display: flex;
+  flex-direction: column;
+}
+
+.contactform-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px; /* Reduced margin between form rows */
+}
+
+.contactform-group {
+  flex: 1;
+  margin-right: 10px; /* Reduced space between form groups */
+}
+
+.contactform-group:last-child {
+  margin-right: 0;
+}
+
+.contactform-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 1rem;
+}
+
+.contactform-group input,
+.contactform-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+  color: #333;
+}
+
+.contactform-group textarea {
+  resize: none;
+}
+
+.contactform-btn {
+  display: inline-flex;
+  align-items: center;
+  background-color: #4caf50;
+  color: #fff;
+  padding: 12px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 40px; /* Reduced margin between the form and button */
+}
+
+.contactform-btn i {
+  margin-right: 10px;
+}
+
+.contactform-btn:hover {
+  background-color: #45a049;
+}
+
+/* Responsive styling for mobile devices */
+@media (max-width: 768px) {
+  .contactform-container {
+    flex-direction: column;
+  }
+
+  .contactform-card, .contactform-card2 {
+    padding: 20px;
+    width: 100%; /* Ensure both cards take full width on small screens */
+  }
+
+  .contactform-row {
+    flex-direction: column;
+  }
+
+  .contactform-group {
+    margin-right: 0;
+    margin-bottom: 10px; /* Further reduced margin for mobile */
+  }
+
+  .contactform-btn {
+    width: 100%;
+    justify-content: center;
+  }
+}
