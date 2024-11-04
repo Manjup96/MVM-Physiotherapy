@@ -1,6 +1,6 @@
 import React from 'react';
 import './Footer.css'; 
-import footer_logo from '../Footer/Images/company logo.png';
+import footer_logo from '../Footer/Images/company logo.jpeg';
 import footer_bg from '../Footer/Images/footer_bg.jpg'; // Import your background image
 
 const Footer = () => {

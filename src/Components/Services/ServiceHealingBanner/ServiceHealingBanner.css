@@ -64,7 +64,7 @@
 /* For large desktops (1440px and above) */
 @media (min-width: 1440px) {
     .ServiceHealing-banner {
-        height: 600px;
+        height: 400px;
     }
 
     .ServiceHealing-banner-content h1 {

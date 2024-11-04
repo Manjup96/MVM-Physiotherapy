@@ -38,6 +38,8 @@ import Services from './Pages/Services';
 import Contact from './Pages/Contact'; 
 import Gallery from './Pages/Gallery';
 import AppointmentForm from './Components/Home/AppointmentForm/AppointmentForm'; // Import AppointmentForm
+import Conditions from './Pages/Conditions';
+
 
 const App = () => {
   return (
@@ -47,6 +49,7 @@ const App = () => {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/services" element={<Services />} />
+        <Route path="/conditions" element={<Conditions />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/gallery" element={<Gallery />} />
         <Route path="/appointment" element={<AppointmentForm />} /> {/* Added route for AppointmentForm */}

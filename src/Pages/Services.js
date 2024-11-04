@@ -4,6 +4,7 @@ import WhatWeDo from '../Components/Home/WhatWeDo/WhatWeDo'
 import ServiceHeading from '../Components/Services/ServiceHeading/ServiceHedaing'
 import ServiceHealingBanner from '../Components/Services/ServiceHealingBanner/ServiceHealingBanner'
 import ServiceTrusted from '../Components/Services/ServiceTrusted/ServiceTrusted'
+import WhatWeDoMore from '../Components/WhatWeDoMore/WhatWeDoMore'
 
 const Services = () => {
   return (
@@ -11,8 +12,10 @@ const Services = () => {
       <ServiceBanner />
       <ServiceHeading />
    <WhatWeDo />
+   <WhatWeDoMore />
    <ServiceHealingBanner />
    <ServiceTrusted />
+   
     </div>
   )
 }

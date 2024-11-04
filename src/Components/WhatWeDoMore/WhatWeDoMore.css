@@ -1,0 +1,155 @@
+.what-we-do-more-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+.what-we-do-more {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.what-we-do-more h4 {
+    font-size: 28px;
+    color: #003087;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Desktop View */
+.what-we-do-more-cards-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+    width: 79%;
+    max-width: 1277px;
+    margin-left: 160px;
+}
+
+.what-we-do-more-card {
+    width: 23%;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s;
+    position: relative;
+    z-index: 0;
+}
+
+.what-we-do-more-card:hover {
+    transform: translateY(-5px);
+}
+
+.what-we-do-more-card-image {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.what-we-do-more-card:hover .what-we-do-more-card-image {
+    transform: scale(1.1);
+}
+
+.what-we-do-more-card-content {
+    padding: 20px;
+    position: relative;
+    z-index: 1;
+    background: rgba(255, 255, 255, 0.8);
+    overflow: hidden;
+}
+
+.what-we-do-more-card-content::before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 180, 216, 0.2);
+    z-index: -1;
+    transition: top 0.4s ease;
+}
+
+.what-we-do-more-card:hover .what-we-do-more-card-content::before {
+    top: 0;
+}
+
+.what-we-do-more-card-content h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    position: relative;
+    z-index: 1;
+}
+
+.what-we-do-more-card-content p {
+    font-size: 14px;
+    color: #666;
+    position: relative;
+    z-index: 1;
+}
+
+.what-we-do-more-read-more-btn {
+    background-color: #00b4d8;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    position: relative;
+    z-index: 1;
+}
+
+.what-we-do-more-read-more-btn:hover {
+    background-color: #0077b6;
+}
+
+
+
+/* Tablet (iPad) View */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .what-we-do-more-cards-container {
+        width: 95%;
+        margin-left: 20px;
+        justify-content: space-between;
+    }
+    .what-we-do-more-card {
+        width: 48%; /* Two cards per row on tablets */
+    }
+}
+
+/* Mobile View */
+@media (max-width: 767px) {
+    .what-we-do-more-cards-container {
+        flex-direction: column;
+        align-items: center;
+        width: 91%;
+        margin-left: 19px;
+    }
+    .what-we-do-more-card {
+        width: 90%; /* Full width on mobile */
+        margin-bottom: 20px;
+    }
+    .what-we-do-more-card-image {
+        height: 180px; /* Slightly smaller images on mobile */
+    }
+    .what-we-do-more h4 {
+        font-size: 24px; /* Adjust heading size for mobile */
+    }
+    .what-we-do-more-card-content h3 {
+        font-size: 16px; /* Adjust card title size for mobile */
+    }
+    .what-we-do-more-card-content p {
+        font-size: 13px; /* Adjust text size for mobile */
+    }
+    .what-we-do-more-read-more-btn {
+        padding: 8px 15px; /* Adjust button size for mobile */
+    }
+}

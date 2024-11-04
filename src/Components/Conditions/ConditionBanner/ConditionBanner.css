@@ -1,0 +1,101 @@
+/* Main banner container */
+.condition-banner {
+    position: relative;
+    background-image: url('../ConditionBanner/Images/condition-banner.jpg'); /* Update this path as necessary */
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5%;
+  }
+  
+  /* Dark overlay on the banner */
+  .condition-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Adjust opacity as needed */
+  }
+  
+  /* Content on top of the overlay */
+  .condition-overlay-content {
+    position: relative;
+    z-index: 1;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  /* Banner title styling */
+  .condition-banner h1 {
+    font-size: 3rem;
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  
+  /* Breadcrumb navigation styling */
+  .condition-breadcrumb {
+    margin-top: 10px;
+    font-size: 1.2rem;
+    color: #ddd;
+  }
+  
+  .condition-breadcrumb span {
+    color: #ffcc00; /* Breadcrumb color */
+  }
+  
+  .condition-breadcrumb span + span {
+    margin-left: 10px;
+  }
+  
+  /* Responsive design adjustments */
+  /* Mobile phones */
+  @media (max-width: 767px) {
+    .condition-banner {
+      height: 250px;
+    }
+  
+    .condition-banner h1 {
+      font-size: 2rem;
+    }
+  
+    .condition-breadcrumb {
+      font-size: 1rem;
+    }
+  }
+  
+  /* Tablets */
+  @media (min-width: 768px) and (max-width: 1024px) {
+    .condition-banner {
+      height: 300px;
+    }
+  
+    .condition-banner h1 {
+      font-size: 2.5rem;
+    }
+  
+    .condition-breadcrumb {
+      font-size: 1.1rem;
+    }
+  }
+  
+  /* Larger screens (desktops) */
+  @media (min-width: 1025px) {
+    .condition-banner {
+      height: 400px;
+    }
+  
+    .condition-banner h1 {
+      font-size: 3rem;
+    }
+  
+    .condition-breadcrumb {
+      font-size: 1.2rem;
+    }
+  }
+  
