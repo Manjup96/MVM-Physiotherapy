@@ -57,9 +57,11 @@ const Header = () => {
           <ul>
             <li><a href="/">Home</a></li>
             <li><a href="/about">About Us</a></li>
-            <li><a href="/services">Services</a></li>
+            <li><a href="/services">Physical Therapy</a></li>
             <li><a href="/conditions">Conditions</a></li>
-            <li><a href="/gallery">Gallery</a></li>
+            <li><a href="">Patient Info</a></li>
+            <li><a href="">Health Tips</a></li>
+            {/* <li><a href="/gallery">Gallery</a></li> */}
             <li><a href="/contact">Contact Us</a></li>
             <li className="book-appointment-mobile">
       <button onClick={handleAppointmentClick}>Book Appointment</button>
