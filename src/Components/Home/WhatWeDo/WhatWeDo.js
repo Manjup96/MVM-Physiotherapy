@@ -3,7 +3,7 @@ import './WhatWeDo.css'; // Import your CSS for styling
 import ManualTherapyImage from './Images/ManualTherapyImage.jpg'; 
 import SportsRehabImage from './Images/SportsRehabImage.jpg'; 
 import PostSurgeryRehabImage from './Images/PostSurgeryRehabImage.jpg'; 
-import ExerciseTherapyImage from './Images/PostSurgeryRehabImage.jpg'; 
+import ExerciseTherapyImage from './Images/hand-therapist2-cropped.jpg'; 
 
 const WhatWeDo = () => {
   return (

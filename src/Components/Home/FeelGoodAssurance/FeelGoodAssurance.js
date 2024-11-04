@@ -17,7 +17,7 @@ const FeelGoodAssurance = () => {
         </p>
       </div>
       <div className="feel-good-image">
-        <img src={Doctor_image} alt="Doctors" />
+        <img src="https://thumbs.dreamstime.com/b/young-indian-female-doctor-showing-thumbs-up-white-background-62407006.jpg" alt="Doctors" />
       </div>
     </div>
   );

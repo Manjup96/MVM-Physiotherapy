@@ -11,9 +11,9 @@ const Introduction = () => {
       <div className="introduction-section">
         {/* Left Section: Images and Experience */}
         <div className="introduction-left">
-          <img src={Introduction1} alt="physiotherapy Image 1" className="introduction-large-img" />
+          <img src="https://media.istockphoto.com/id/1473559486/photo/doctor-consoling-mature-man.jpg?s=612x612&w=0&k=20&c=zQhN4IwH3LxygYTFXv7D3vayKZ1Pvd37IT5tlv8jzEU=" alt="physiotherapy Image 1" className="introduction-large-img" />
           <div className="introduction-small-images">
-            <img src={Introduction2} alt="physiotherapy Image 2" className="introduction-small-img" />
+            <img src="https://plus.unsplash.com/premium_photo-1682089872205-dbbae3e4ba32?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8aW5kaWFuJTIwZG9jdG9yfGVufDB8fDB8fHww" alt="physiotherapy Image 2" className="introduction-small-img" />
             <img src={Introduction3} alt="physiotherapy Image 3" className="introduction-small-img" />
           </div>
         </div>

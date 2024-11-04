@@ -28,13 +28,13 @@ const photos = [
   { id: 7, src: image7, alt: 'Image 7 description' },
   { id: 8, src: image8, alt: 'Image 8 description' },
   { id: 9, src: image9, alt: 'Image 9 description' },
-  { id: 10, src: image10, alt: 'Image 1 description' },
-  { id: 11, src: image11, alt: 'Image 2 description' },
-  { id: 12, src: image12, alt: 'Image 3 description' },
-  { id: 13, src: image13, alt: 'Image 4 description' },
-  { id: 14, src: image14, alt: 'Image 5 description' },
-  { id: 15, src: image1, alt: 'Image 6 description' },
-  { id: 16, src: image2, alt: 'Image 7 description' },
+  { id: 10, src: "http://localhost:3001/static/media/Woman-Training-on-SmartFit.191cace30b33fed06172.jpg", alt: 'Image 1 description' },
+  { id: 11, src: "https://media.istockphoto.com/id/1401141140/photo/electro-stimulation-in-physical-therapy.jpg?s=612x612&w=0&k=20&c=iaIO8sNrvQMgXuXmxC1gesuRd7DEaDE_K_LyH3QqDdA=", alt: 'Image 2 description' },
+  { id: 12, src: "https://orthopedicandbalancetherapy.com/wp-content/uploads/2020/03/arthritis-pain-0320-1280x500-1.jpg", alt: 'Image 3 description' },
+  { id: 13, src: "https://t4.ftcdn.net/jpg/03/82/25/91/360_F_382259175_YzJvLpdEKBPvDnhVbArSj6jyb61wcMi1.jpg", alt: 'Image 4 description' },
+  { id: 14, src: "http://localhost:3001/static/media/EXERCISE_THERAPY_1.2d01cc4393347020960d.jpg", alt: 'Image 5 description' },
+  { id: 15, src: "http://localhost:3001/static/media/physical-therapy-Suncare-therapy-inc-miami-lakes-miami-fl-1.49b838e25cff024e185a.jpg", alt: 'Image 6 description' },
+  { id: 16, src: "https://cdn.painscale.com/cms/imgs/0f4fa4d0-d3e6-11ed-a818-6ba56afe2269.jpg", alt: 'Image 7 description' },
 ];
 
 const PhotoGallery = () => {
