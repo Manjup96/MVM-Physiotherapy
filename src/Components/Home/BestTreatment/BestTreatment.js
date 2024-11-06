@@ -9,9 +9,9 @@ const BestTreatment = () => {
       <div className="banner-content">
         <h1>Get the best treatment from the most experienced physiotherapist</h1>
         <p>
-          Velit letius montes sodales nec purus erat. Adipiscing eleifend dui 
-          inceptos hendrerit mauris at commodo potenti ullamcorper senectus. 
-          Habitasse aliquet orci consequat faucibus ipsum vestibulum tincidunt dictumst.
+        Receive top-quality care from highly experienced physiotherapists dedicated to your recovery. 
+        Our specialists use advanced techniques and personalized treatment plans to help you achieve 
+        optimal health and mobility. Trust us to provide the best in physiotherapy care.
         </p>
         <button className="BestTreatment-button">Get Started</button>
       </div>

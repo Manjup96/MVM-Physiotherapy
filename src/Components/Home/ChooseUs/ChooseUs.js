@@ -12,7 +12,10 @@ const ChooseUs = () => {
           <div className="why-choose-us">
             <h4>WHY CHOOSE US</h4>
             <h1>Correcting your posture with professional brilliance</h1>
-            <p>Vivamus pharetra potenti malesuada metus sem. Neque si rutrum accumsan massa aliquam orci mi dictumst justo primis consequat. Et nam posuere fringilla iaculis ac dapibus convallis molestie semper mattis.</p>
+            <p>Improve your posture with the expertise of our skilled physiotherapists. 
+              Our team combines professional knowledge with tailored techniques to help you 
+              achieve alignment and comfort. Trust us to guide you toward a healthier,
+              more confident posture.</p>
           </div>
 
           <div className="choose-image-gallery">
@@ -25,19 +28,19 @@ const ChooseUs = () => {
         <div className="choose-features-list">
           <div className="choose-feature-item">
             <h3>Experience and Expertise <span>✔</span></h3>
-            <p>Condimentum nam ullamcorper hac dolor volutpat eu. Massa velit dictumst ligula mollis blandit luctus ornare bibendum posuere lacus.</p>
+            <p>Benefit from the perfect blend of experience and expertise with our dedicated physiotherapists.</p>
           </div>
           <div className="choose-feature-item">
             <h3>Holistic Approach <span>✔</span></h3>
-            <p>Condimentum nam ullamcorper hac dolor volutpat eu. Massa velit dictumst ligula mollis blandit luctus ornare bibendum posuere lacus.</p>
+            <p>Our holistic approach treats the whole person, focusing on physical, mental, and emotional well-being.</p>
           </div>
           <div className="choose-feature-item">
             <h3>Friendly and Professional <span>✔</span></h3>
-            <p>Condimentum nam ullamcorper hac dolor volutpat eu. Massa velit dictumst ligula mollis blandit luctus ornare bibendum posuere lacus.</p>
+            <p>Enjoy a warm, welcoming atmosphere with our friendly and professional team.</p>
           </div>
           <div className="choose-feature-item">
             <h3>High-Quality Service <span>✔</span></h3>
-            <p>Condimentum nam ullamcorper hac dolor volutpat eu. Massa velit dictumst ligula mollis blandit luctus ornare bibendum posuere lacus.</p>
+            <p>Experience high-quality service with our dedicated physiotherapy team, committed to delivering exceptional care tailored to your needs.</p>
           </div>
         </div>
       </div>

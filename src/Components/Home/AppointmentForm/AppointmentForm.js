@@ -10,10 +10,10 @@ const AppointmentForm = () => {
         <div className="appointment-info-section text-white p-5">
           <h1>We treat you today to give you a pain-free tomorrow</h1>
           <p className="appointment-info-paragraph">
-            Bibendum quam libero donec natoque dictumst non nisi amet parturient. Habitant conubia per tempor suscipit ullamcorper penatibus mauris curae tortor. Nascetur vel himenaeos vitae bibendum pulvinar hendrerit ornare porta erat.
+          We treat you today to ensure a pain-free tomorrow, using targeted therapies and personalized care.
           </p>
           <p className="appointment-info-paragraph">
-            Dapibus maximus eget fringilla efficitur dui proin tortor amet blandit donec. Volutpat finibus dui libero justo vulputate faucibus praesent nostra etiam. Suspendisse finibus consequat lobortis facilisi ridiculus senectus vestibulum.
+          Our expert team is dedicated to addressing your needs and promoting long-term healing, so you can enjoy a life free from discomfort and limitations.
           </p>
           
           {/* Contact Information */}
@@ -22,14 +22,14 @@ const AppointmentForm = () => {
               <i className="fas fa-phone-alt appointment-contact-icon"></i>
               <div className="appointment-contact-details">
                 <h5>Call Us</h5>
-                <span>+1 (555) 987-6543</span>
+                <span>+911234567890</span>
               </div>
             </div>
             <div className="appointment-contact-box">
               <i className="fas fa-envelope appointment-contact-icon"></i>
               <div className="appointment-contact-details">
                 <h5>Email Us</h5>
-                <span>hello@yourdomain.com</span>
+                <span>hello@gmail.com</span>
               </div>
             </div>
           </div>
@@ -101,10 +101,14 @@ const AppointmentForm = () => {
               </div>
             </div>
             <div className="form-group mb-3">
-              <label>Description</label>
-              <textarea className="form-control" rows="3" placeholder="Your message"></textarea>
+              <label>What do you have in mind</label>
+              <textarea className="form-control" rows="3" placeholder="Please enter query..."></textarea>
             </div>
-            <button type="submit" className="btn btn-success btn-block">Make an Appointment</button>
+            <div className='btn1' >
+            <button type="submit" className="btn btn-success btn-block" style={{width:"80%"}}>
+            <i className="fas fa-envelope"></i> Make an Appointment
+              </button>
+            </div>
           </form>
         </div>
       </div>

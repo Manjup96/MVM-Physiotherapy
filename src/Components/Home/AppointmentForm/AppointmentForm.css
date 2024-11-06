@@ -13,6 +13,12 @@
   margin-left: 100px;
 }
 
+.btn1{
+  display: flex;
+  align-items: center;
+  margin-left: 15%;
+}
+
 /* Information and Form Container */
 .appointment-info-container {
   width: 100%;
@@ -147,7 +153,8 @@
 }
 
 .form-control {
-  border: 1px solid #ddd;
+  background: #f8fcff;
+  border: 1px solid #28a9ff;
   border-radius: 5px;
   padding: 10px;
   font-size: 14px;
@@ -160,7 +167,7 @@
 
 /* Submit Button */
 .btn-success {
-  background-color: #28a745;
+  background-color: #218838;
   border: none;
   padding: 10px 15px;
   font-size: 16px;

@@ -46,7 +46,7 @@ const WhatWeDoMore = () => {
         <img src={FCE} alt="Exercise Therapy" className="what-we-do-more-card-image" />
         <div className="what-we-do-more-card-content">
           <h3>FCE's (Functional Capacity Evaluations)</h3>
-          <p>Our therapists create personalized exercise routines to help strengthen muscles, improve balance, and enhance flexibility.</p>
+          <p>Our therapists create personalized exercise routines to help strengthen muscles, and enhance flexibility.</p>
           <button className="what-we-do-more-read-more-btn">Read More</button>
         </div>
       </div> 
@@ -55,7 +55,7 @@ const WhatWeDoMore = () => {
         <img src={COVID} alt="Exercise Therapy" className="what-we-do-more-card-image" />
         <div className="what-we-do-more-card-content">
           <h3>COVID-19 Rehabilitation and Prevention Program</h3>
-          <p>Our therapists create personalized exercise routines to help strengthen muscles, improve balance, and enhance flexibility.</p>
+          <p>Our therapists create personalized exercise routines to help strengthen muscles, and enhance flexibility.</p>
           <button className="what-we-do-more-read-more-btn">Read More</button>
         </div>
       </div> 

@@ -32,7 +32,7 @@ const Testimonials = () => {
         <div className="testimonials-text">
           <h2>Chiropractic Patient Testimonials</h2>
           <p>
-            Dui turpis habitant cras commodo placerat vel risus. Lacinia cursus si volutpat aenean laoreet praesent dignissim habitasse quisque cras commodo.
+          Here's what our chiropractic patients have to say about their experience:
           </p>
           
           {/* Testimonial Cards inside the Slider */}
@@ -48,7 +48,7 @@ const Testimonials = () => {
                     </div>
                   </div>
                   <p>
-                    Elit amet dui eget erat nibh platea velit primis interdum at. Sollicitudin consectetur commodo quam imperdiet ut. Nullam si praesent maximus potenti aliquet erat tellus.
+                    "I’ve struggled with back pain for years, but after just a few sessions, I’m feeling like myself again. The team’s care and expertise made all the difference!" – Sarah T."
                   </p>
                 </div>
               </div>
@@ -63,7 +63,7 @@ const Testimonials = () => {
                     </div>
                   </div>
                   <p>
-                    Elit amet dui eget erat nibh platea velit primis interdum at. Sollicitudin consectetur commodo quam imperdiet ut. Nullam si praesent maximus potenti aliquet erat tellus.
+                    "I never realized how much tension I was carrying in my neck and shoulders until I saw the chiropractor here. Now, I feel more relaxed and pain-free!" – John M."
                   </p>
                 </div>
               </div>
@@ -78,7 +78,7 @@ const Testimonials = () => {
                     </div>
                   </div>
                   <p>
-                    Elit amet dui eget erat nibh platea velit primis interdum at. Sollicitudin consectetur commodo quam imperdiet ut. Nullam si praesent maximus potenti aliquet erat tellus.
+                    "The personalized approach really made me feel heard and cared for. Thanks to chiropractic care, I can enjoy daily activities without discomfort!" – Emily R."
                   </p>
                 </div>
               </div>
@@ -93,7 +93,7 @@ const Testimonials = () => {
                     </div>
                   </div>
                   <p>
-                    Elit amet dui eget erat nibh platea velit primis interdum at. Sollicitudin consectetur commodo quam imperdiet ut. Nullam si praesent maximus potenti aliquet erat tellus.
+                    "The personalized approach really made me feel heard and cared for. Thanks to chiropractic care, I can enjoy daily activities without discomfort!" – Emily R."
                   </p>
                 </div>
               </div>

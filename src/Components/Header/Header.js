@@ -27,10 +27,10 @@ const Header = () => {
       <div className="top-bar">
         <div className="contact-info">
           <span>
-            <FontAwesomeIcon icon={faEnvelope} /> hello@chirophyzdemo.com
+            <FontAwesomeIcon icon={faEnvelope} /> hello@gmail.com
           </span>
           <span>
-            <FontAwesomeIcon icon={faPhoneAlt} /> +1 (555) 987-6543
+            <FontAwesomeIcon icon={faPhoneAlt} /> +911234567890
           </span>
         </div>
         <div className="social-icons">

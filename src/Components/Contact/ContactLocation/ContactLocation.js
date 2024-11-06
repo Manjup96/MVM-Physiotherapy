@@ -8,8 +8,9 @@ const ContactLocation = () => {
         <h2>Get In Touch</h2>
         <h1>Start Your Wellness Journey Today!</h1>
         <p>
-          Effictur diam est fames letius fringilla massa per malesuada justo praesent facilisis. 
-          Lobortis a maximus congue vivamus natoque nullam iaculis fames.
+        Start your wellness journey today and take the first step towards a healthier, more balanced life.
+        Our expert team is here to guide you with personalized care and advanced treatments tailored to your needs. 
+        Don't wait – begin your path to better health and lasting vitality now!
         </p>
         
         <div className="contact-details">
@@ -17,7 +18,7 @@ const ContactLocation = () => {
             <i className="fas fa-map-marker-alt"></i>
             <div>
               <h4>Workshop</h4>
-              <p>Tower 789 Oak St, Smalltown, TX 23456, United States</p>
+              <p>Bengaluru, India</p>
             </div>
           </div>
 
@@ -25,7 +26,7 @@ const ContactLocation = () => {
             <i className="fas fa-phone"></i>
             <div>
               <h4>Phone</h4>
-              <p>Phone : +1 (555) 987-6543</p>
+              <p>Phone : +911234567890</p>
             </div>
           </div>
 
@@ -33,7 +34,7 @@ const ContactLocation = () => {
             <i className="fas fa-envelope"></i>
             <div>
               <h4>Email</h4>
-              <p>info@yourdomain.com</p>
+              <p>hello@gmail.com</p>
             </div>
           </div>
 

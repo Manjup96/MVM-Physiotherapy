@@ -27,6 +27,7 @@
 /* Large image styling */
 .introduction-large-img {
     width: 55%; /* Reduced the width of the large image */
+    height: 445px;
     border-radius: 22% 3%;
     object-fit: cover;
 }

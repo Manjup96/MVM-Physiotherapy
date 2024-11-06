@@ -6,9 +6,10 @@ const ServiceHeading = () => {
     <div className="service-heading">
       <h1>Unlocking Your Body’s Potential for Health and Healing</h1>
       <p>
-        Et dis malesuada etiam eget tempor augue sodales per. Himenaeos porttitor
-        convallis ex integer fames dolor imperdiet luctus. Faucibus non et taciti rhoncus
-        conubia tristique velit sagittis neque.
+      Unlock your body’s potential for health and healing with our expert care. 
+      We focus on empowering you to achieve optimal wellness by addressing the root 
+      causes of pain and restoring natural balance. Discover a pathway to recovery that 
+      nurtures your body’s innate ability to heal and thrive.
       </p>
     </div>
   );

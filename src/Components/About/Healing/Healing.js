@@ -9,8 +9,9 @@ const Healing = () => {
         <div className="healing-content">
           <h1>We carry on the tradition of pure healing</h1>
           <p>
-            Dictumst natoque pede consectetur inceptos fermentum. Mus himenaeos blandit magnis
-            tortor imperdiet massa penatibus. Magnis rhoncus quisque montes orci dictum leo inceptos.
+          We carry on the tradition of pure healing, blending time-honored techniques with modern advancements in physiotherapy. 
+          Our commitment to authentic, compassionate care ensures that each patient experiences true,
+          lasting recovery and wellness.
           </p>
           <button className="discover-button">Discover More</button>
         </div>

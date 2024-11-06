@@ -28,7 +28,7 @@ const ConditionSection = () => {
           <img src="https://stock.imgix.net/8515?auto=compress,format&q=50&cs=adobergb1998" alt="Neck Pain" className="condition-section-card-image" />
           <div className="condition-section-card-content">
             <h3>Neck Pain Relief</h3>
-            <p>Specialized care to alleviate neck pain and improve posture, helping you regain comfort and function.</p>
+            <p>Specialized care to alleviate neck pain and improve posture, helping you regain helping you regain comfort and function.</p>
             <button className="condition-section-read-more-btn">Read More</button>
           </div>
         </div>
@@ -55,7 +55,7 @@ const ConditionSection = () => {
           <img src="https://orthopedicandbalancetherapy.com/wp-content/uploads/2020/03/arthritis-pain-0320-1280x500-1.jpg" alt="Arthritis Pain Relief" className="condition-section-card-image" />
           <div className="condition-section-card-content">
             <h3>Arthritis Pain Relief</h3>
-            <p>Personalized treatments to manage arthritis pain, improve flexibility, and enhance your quality of life.</p>
+            <p>Personalized treatments to manage arthritis pain, improve flexibility, and enhance your enhance your quality of life.</p>
             <button className="condition-section-read-more-btn">Read More</button>
           </div>
         </div>
@@ -64,7 +64,7 @@ const ConditionSection = () => {
           <img src="https://cdn.painscale.com/cms/imgs/0f4fa4d0-d3e6-11ed-a818-6ba56afe2269.jpg" alt="Chronic Pain Relief" className="condition-section-card-image" />
           <div className="condition-section-card-content">
             <h3>Chronic Pain Relief</h3>
-            <p>Our approach helps manage chronic pain, restore functionality, and improve overall quality of life.</p>
+            <p>Our approach helps manage chronic pain, restore functionality, and improve overall improve overall quality of life.</p>
             <button className="condition-section-read-more-btn">Read More</button>
           </div>
         </div>

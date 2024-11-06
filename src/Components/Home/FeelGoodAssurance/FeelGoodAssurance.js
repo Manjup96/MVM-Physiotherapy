@@ -10,10 +10,9 @@ const FeelGoodAssurance = () => {
           "We not only make you feel good. We make sure that you are good."
         </h1>
         <p>
-          Inceptos fames enim consectetur ac nullam donec. Ullamcorper egestas 
-          curabitur dui convallis hac cubilia phasellus senectus at suspendisse.
-          Mi venenatis ipsum purus interdum platea faucibus. Luctus nascetur 
-          inceptos tristique lectus risus pede.
+        We go beyond simply helping you feel better; our commitment is to ensure you truly get better. 
+        With a focus on long-term wellness, our team provides care that heals, strengthens, 
+        and supports your journey to lasting health.
         </p>
       </div>
       <div className="feel-good-image">

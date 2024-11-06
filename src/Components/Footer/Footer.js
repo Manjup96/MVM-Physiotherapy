@@ -19,7 +19,7 @@ const Footer = () => {
       <div className="footer-container">
         <div className="footer-section">
           <img src={footer_logo} alt="ChiroPhyz Logo" className="footer-logo" />
-          <p>Velit penatibus faucibus ultricies nunc lobortis vitae erat neque sit. Fermentum cras luctus hendrerit potenti per primis lobortis pharetra montes.</p>
+          <p>Go on and live with the freedom of physical therapy, designed to help you move better, feel stronger, and live pain-free.</p>
           <div className="footer-social-icons">
             <a href="#"><i className="fab fa-facebook-f"></i></a>
             <a href="#"><i className="fab fa-twitter"></i></a>
@@ -41,10 +41,10 @@ const Footer = () => {
 
         <div className="footer-section">
           <h4>Get In Touch</h4>
-          <p>Blue Tower, 789 Oak St, Smalltown, TX 23456, US</p>
-          <p><i className="fas fa-envelope"></i> hello@chirophyzdemo.com</p>
-          <p><i className="fas fa-phone"></i> +1 (555) 987-6543</p>
-          <p><i className="fas fa-fax"></i> +1 (555) 987-6541</p>
+          <p>Bengaluru, India</p>
+          <p><i className="fas fa-envelope"></i> hello@gmail.com</p>
+          <p><i className="fas fa-phone"></i> +911234567890</p>
+          <p><i className="fas fa-fax"></i> +911234567890</p>
         </div>
 
         <div className="footer-section">

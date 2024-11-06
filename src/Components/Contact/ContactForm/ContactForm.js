@@ -7,7 +7,7 @@ const ContactForm = () => {
       <div className="contactform-card">
         <h2>Send us a message</h2>
         <p>
-          Senectus congue blandit augue semper dictumst non vestibulum fermentum sodales condimentum.
+        Send us a message and let us know how we can assist you on your path to better health.
         </p>
         <form className="contactform">
           <div className="contactform-row">

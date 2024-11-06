@@ -15,17 +15,17 @@ const HomeBanner = () => {
     {
       imageUrl: Banner1,
       title: 'We Heal With The Latest Innovations In Physiotherapy',
-      subtitle: 'Fames magnis enim eget torquent aenean accumsan. Consequat feugiat scelerisque vel dignissim auctor non tempor.',
+      subtitle: 'We heal with the latest innovations in physiotherapy, incorporating advanced techniques and cutting-edge technology to deliver effective, personalized treatments.',
     },
     {
       imageUrl: Banner2,
       title: 'Discover Our Holistic Healing Techniques',
-      subtitle: 'Pellentesque in ipsum id orci porta dapibus. Sed porttitor lectus nibh.',
+      subtitle: 'Discover our holistic healing techniques, designed to restore balance and promote overall well-being.',
     },
     {
       imageUrl: Banner3,
       title: 'Experience Comprehensive Wellness Care',
-      subtitle: 'Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.',
+      subtitle: 'Experience comprehensive wellness care that goes beyond treating symptoms to enhance your overall health.',
     }
   ];
 
