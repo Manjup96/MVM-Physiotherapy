@@ -190,4 +190,10 @@
   .appointment-info-paragraph {
       font-size: 13px;
   }
+  .appointment-info-section{
+    margin-left: -45%;
+  } 
+    .appointment-form-container{
+      margin-left: -141px;
+    }  
 }

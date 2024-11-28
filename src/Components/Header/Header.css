@@ -67,7 +67,7 @@ header {
 
 .nav-menu ul {
   display: flex;
-  gap: 30px;
+  gap: 16px;
   list-style: none;
   padding: 0;
 }
